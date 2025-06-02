@@ -1,4 +1,4 @@
-name: Check vCPU
+name: geb2
 
 on: push
 
